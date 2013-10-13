@@ -17,7 +17,7 @@ Vagrant.configure("2") do |config|
     sbc_env.vm.box = "precise64"
 
     # Setup the hostname as "sbc_env"
-    sbc_env.vm.hostname = "sbc_env"
+    sbc_env.vm.hostname = "sbc-env"
 
     # Customize the Virtualbox with defined 2G RAM and 4 CPU cores
     #
