@@ -13,6 +13,25 @@ test/version_tmp
 tmp
 workspaces
 
+# Vagrant stuffs
+acceptance_config.yml
+boxes/*
+/.vagrant
+
+# Bundler/Rubygems
+*.gem
+.bundle
+pkg/*
+tags
+/Gemfile.lock
+/Berksfile.lock
+test/tmp/
+
+# OS-specific
+.DS_Store
+
+
+
 # YARD artifacts
 .yardoc
 _yardoc
