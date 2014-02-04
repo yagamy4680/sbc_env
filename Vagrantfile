@@ -50,5 +50,13 @@ Vagrant.configure("2") do |config|
       chef.json = {
       }
     end # end of "sbc_env" chef_solo provisioning
+
+    sbc_env.vm.provision :shell, :inline => %[
+      apt-get install -y wget curl unzip
+      apt-get install -y build-essential u-boot-tools qemu-user-static debootstrap emdebian-archive-keyring git libusb-1.0-0-dev pkg-config
+      apt-get install -y libncurses5-dev uboot-mkimage
+      apt-get install -y libc6-i386 lib32stdc++6 lib32z1
+    ]
   end # end of "sbc_env" vm instance
+
 end
